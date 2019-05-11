@@ -1,0 +1,12 @@
+
+# 端口
+server:
+  port: 9098
+
+spring:
+  application:
+    # 服务名称
+    name: iutil-notice-web
+  profiles:
+    # 默认启动环境
+    active: dev

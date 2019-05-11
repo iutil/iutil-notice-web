@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    ########################################################
+    # zookeeper配置
+    ########################################################
+    zookeeper:
+      connect-string: ip1:port1,ip2:port2
+
+  ########################################################
+  # kafka配置
+  ########################################################
+  kafka:
+    bootstrap-servers: ip1:port1,ip2:port2
+    consumer:
+      # 消费组
+      group-id: js-api-kafka
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+# 自定义注入配置
+iutil:
+  kafka:
+    topic: [your kafka topic]
